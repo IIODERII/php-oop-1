@@ -33,8 +33,6 @@ class Movie
 
     private function flagPath()
     {
-        $languagesString = file_get_contents(__DIR__ . "/language.json");
-        $languageArray = json_decode($languagesString, true);
         return "https://www.worldometers.info/img/flags/$this->lang-flag.gif";
 
     }
